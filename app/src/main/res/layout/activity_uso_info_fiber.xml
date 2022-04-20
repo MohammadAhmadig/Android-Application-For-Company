@@ -1,0 +1,257 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#F4F3F3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/row_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar_main"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/text_place_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:id="@+id/text_operator_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="اپراتور"
+                    android:fontFamily="@font/bnazanin"
+                    android:textColor="#000000"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/text_place_title1"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:background="#ffffff"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp"
+                card_view:cardPreventCornerOverlap="true"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/desc_sec"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:id="@+id/table1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="#E0F4F6">
+
+                        <TableRow
+
+                            android:padding="5dp">
+
+
+
+                            <TextView
+                                android:id="@+id/t00"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text="درصد" />
+
+                            <TextView
+                                android:id="@+id/t0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text="مجموع" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text="عنوان" />
+
+                        </TableRow>
+
+                        <TableRow
+
+                            android:padding="5dp">
+
+
+
+                            <TextView
+                                android:id="@+id/t11"
+                                android:background="#B2D7F4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text=" " />
+
+                            <TextView
+                                android:id="@+id/t1"
+                                android:background="#B2D7F4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text=" " />
+
+                            <TextView
+                                android:background="#92C6ED"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text="طول طرح فیبر پلکانی (کیلومتر)" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/t22"
+                                android:background="#B2D7F4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text=" " />
+                            <TextView
+                                android:id="@+id/t2"
+                                android:background="#B2D7F4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text=" " />
+
+                            <TextView
+                                android:background="#92C6ED"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text="طول اجرا شده فیبر پلکانی (کیلومتر)" />
+                        </TableRow>
+
+                        <TableRow
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/t33"
+                                android:background="#B2D7F4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text=" " />
+
+                            <TextView
+                                android:id="@+id/t3"
+                                android:background="#B2D7F4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text=" " />
+
+                            <TextView
+                                android:background="#92C6ED"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text="طول طرح فیبر تاریک (کیلومتر)" />
+                        </TableRow>
+                        <TableRow
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/t44"
+                                android:background="#B2D7F4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text=" " />
+
+                            <TextView
+                                android:id="@+id/t4"
+                                android:background="#B2D7F4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text=" " />
+
+                            <TextView
+                                android:background="#92C6ED"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:fontFamily="@font/bnazanin"
+                                android:text="طول اجرا شده فیبر تاریک (کیلومتر)" />
+
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
